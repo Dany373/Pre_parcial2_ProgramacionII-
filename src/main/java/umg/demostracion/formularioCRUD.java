@@ -15,8 +15,8 @@ public class formularioCRUD {
     private JLabel lblNombre;
     private JTextField textFieldNombre;
     private JLabel lblApellido;
-    private JLabel lblDepartamento;
     private JTextField textFieldApellido;
+    private JLabel lblDepartamento;
     private JTextField textFieldDepartamento;
     private JLabel lblFechaNacimiento;
     private JTextField textFieldFechaNacimiento;
@@ -135,9 +135,5 @@ public class formularioCRUD {
 
     public JPanel getPanel() {
         return FormularioDatos;
-    }
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
     }
 }

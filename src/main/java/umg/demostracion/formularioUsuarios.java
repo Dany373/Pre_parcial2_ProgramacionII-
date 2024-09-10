@@ -117,4 +117,7 @@ public class formularioUsuarios {
             }
         });
     }
+    public JPanel getPanel() {
+        return jPanel;
+    }
 }
