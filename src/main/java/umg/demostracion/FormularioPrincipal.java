@@ -12,6 +12,7 @@ public class FormularioPrincipal {
     private JButton buttonEjercicio1;
     private JButton buttonEjercicio2;
     private JLabel lblVacio2;
+    private JButton buttonEjercicio3;
 
     public FormularioPrincipal() {
 
@@ -33,6 +34,17 @@ public class FormularioPrincipal {
                 // abrir frm ejercicio 2
                 JFrame frame = new JFrame("Formulario Usuarios");
                 frame.setContentPane(new formularioUsuarios().getPanel());
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
+            }
+        });
+        buttonEjercicio3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // abrir frm ejercicio 3
+                JFrame frame = new JFrame("Formulario Champions League");
+                frame.setContentPane(new FormularioChampionsLeague().getFrmCL());
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
